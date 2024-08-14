@@ -133,7 +133,11 @@ class Information extends React.Component {
      */
     render(){
         return <div className="container">
-            <h1 className="title">Information Page</h1>
+            <div className="post">
+                <h1 className="title">Information </h1>
+                <p>Below you will find the basic definitions of each broadcast protocol, along
+                with examples.</p>
+            </div>
             <div>
                 {this.displayDiagram(this.state.diagramPost)}
             </div>

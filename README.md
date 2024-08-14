@@ -1,7 +1,8 @@
 # Interactive Web Application Illustrating Global Time and Broadcast Protocols
 
 This project was my senior capstone project at Western Carolina University, completed in 
-December 2022 with classmate Cameron Craven. 
+December 2022 with classmate Cameron Craven. I have personally started updating and improving this 
+project as of August 2024.
 
 The projects main goal is to create a visual learning tool to help further understanding of 
 some important cloud computing concepts. These concepts include the happens-before relationship, 

@@ -100,17 +100,19 @@ class TestKnowledge extends React.Component {
 
         // on load chooses a random diagram to start with
         return <div className="container" onLoad={this.randomImage}>
-
-            <h1 className="title">Test Your Knowledge</h1>
-
-            <h4 className="questionText">What diagram is this?</h4>
+            <div className="post">
+                <h1 className="title">Test Your Knowledge</h1>
+                <p>Use the tool below to test your knowledge of broadcast protocols! This simple tool
+                will show you an example broadcast protocol, and you should select which broadcast
+                you think it is. The page will return your result in the top right corner. </p>
+            </div>
 
             <ToastContainer />
 
             <div className="flexbox">
 
                 <div className="IBlockTest" >
-
+                    <h4 className="questionText">What diagram is this?</h4>
                     <img style={size} className="image" src={this.state.currentImg}/>
 
                 </div>

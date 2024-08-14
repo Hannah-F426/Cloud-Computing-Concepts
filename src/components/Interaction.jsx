@@ -264,7 +264,15 @@ class Interaction extends React.Component {
      */
     render(){
         return <div className="container">
-            <h1 className="title">Interaction Page</h1>
+            <div className="post">
+                <h1 className="title">Build your own!</h1>
+                <p>Use the tool below to try building your own timing diagram. Simply click the events
+                on each column to connect events. After you have made more than two connections, you
+                can name your chart and submit it. On the right side column you will see a summary of
+                your diagram, along with what broadcast protocol it , if any. You will also have the
+                option to try your knowledge of Lamport and vector clocks by submitting the associated
+                clock value to each event. </p>
+            </div>
             <div className="flexbox">
                 <div className="IBlock">
                     <div className="addLittleSpace"></div>

@@ -65,41 +65,15 @@ class Home extends React.Component{
     render() {
         return <div className="container">
             <article>
-                <h1 className="title">Home Page</h1>
                 <div className="home">
-                    <h3>About</h3>
-                    <h5>
-                        Each of the website's four tabs are explained by a button below
-                    </h5>
-                    <div className="flexbox">
-                        <div className="dropDownBox" onClick={this.setHome}>
-                            <p>Home</p>
-                        </div>
-                        <div className="dropDownBox" onClick={this.setInformation}>
-                            <p>Information</p>
-                        </div>
-                        <div className="dropDownBox" onClick={this.setTestYourKnowledge}>
-                            <p>Test Your Knowledge</p>
-                        </div>
-                        <div className="dropDownBox" onClick={this.setTryItYourself}>
-                            <p>Try It Yourself</p>
-                        </div>
-                    </div>
-                    <div className="home">
-                        <h4>{this.state.name}</h4>
-                        <p>{this.state.message}</p>
-                    </div>
-
-
-                    <h3 className="title"></h3>
-                    <h3 className="title"></h3>
-                    <h3 className="title">Objectives</h3>
-                    <div className="home">
+                    <h1 className="title">Let's learn some Cloud Computing Concepts!</h1>
+                    <img className='image' src={"/images/FIFO-og.png"}/>
                         <p>
                             This website is designed as a visual learning tool to help further the understanding of the
                             various broadcast protocols, along with correct implementation of Lamport clocks and vector
                             clocks in a meaningful and fun way.
                         </p>
+                    <h3>Technologies</h3>
                         <p>
                             We have fully implemented the MERN stack, seamlessly querying our backend database (MongoDB) and
                             processing these queries using Express as well as Node.js. These come together with our front
@@ -108,9 +82,6 @@ class Home extends React.Component{
                         </p>
                         <img className='image' src={"/images/MERN.png"}/>
                     </div>
-
-
-                </div>
             </article>
         </div>
     }
