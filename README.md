@@ -1,6 +1,46 @@
-# Getting Started with Create React App
+# Interactive Web Application Illustrating Global Time and Broadcast Protocols
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was my senior capstone project at Western Carolina University, completed in 
+December 2022 with classmate Cameron Craven. 
+
+The projects main goal is to create a visual learning tool to help further understanding of 
+some important cloud computing concepts. These concepts include the happens-before relationship, 
+Lamport clocks and vector clocks, and the reliable broadcast protocols.
+
+To achieve this goal we:
+
+* have example timing diagrams for each concept, along with definitions
+* allow the user to input a schedule which is then classified
+* the resulting timing diagram, broadcast protocol, and lamport/vector clocks are then shown to 
+  the user
+
+### Concepts Covered:
+##### Happens-Before Relationship
+Many important software systems today utilize distributed systems For distributed systems to work 
+reliably, one must address the issues of the lack of a global clock and lack of shared memory. To
+address the problem of lack of a global clock in distributed systems, the first step is to establish
+a happens-before relationship. After establishing a happens-before relationship, further ways to 
+understand the ordering of events would be logical clocks and broadcast protocols. There are two types 
+of logical clocks, those being lamport clocks and vector clocks.
+
+##### Logical Clocks
+Lamport clocks can be used to determine the happens- before relationship among events. However, they 
+are not able to detect when two events are concurrent. Vector clocks allow us to know which events are
+concurrent.
+
+##### Broadcast Protocols
+Another way of understanding delivery order is through broadcast protocols. A broadcast is when a node
+sends a message and all nodes in the group receive it. We focus on reliable broadcasts, where messages 
+are not allowed to drop. These protocols are :
+* FIFO broadcast,
+* Causal broadcast,
+* Total Order broadcast,
+* FIFO-Total Order broadcast
+
+
+## To run the full project:
+* Run server.js
+* Run npm start, as described below:
 
 ## Available Scripts
 
@@ -29,42 +69,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
